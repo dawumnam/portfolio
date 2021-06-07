@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" nonce="9dac4374fc604a408efcf18d441" src="//local.adguard.org?ts=1622279180305&amp;type=content-script&amp;dmn=cvws.icloud-content.com&amp;app=chrome.exe&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1&amp;sbe=0"></script>
+<script type="text/javascript" nonce="9dac4374fc604a408efcf18d441" src="//local.adguard.org?ts=1622279180305&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Extra&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Dawum Nam</title>
+  </head>
+
+  <body>
+    <section class="introWrapper">
+      <p class="intro">
+        Hi, I am Dawum Nam. A web developer from <span id="kr">South Korea</span> currently in the
+        U.S. I have a passion for producing clean code and learning new things.
+        My specialties are Javascript, CSS, React and Node.js.
+      </p>
+      <div class="introBottomBorder"></div>
+    </section>
+
+    <section class="recentProjectsWrapper">
+      <h3 class="recentProjectsTitle">Welcome, this is a short page about me.</h3>
+      <div class="projectWrapper">
+        <div class="projectCard" id="reusd">
+          <img
+            class="projectCardImg"
+            src="https://i.imgur.com/F3ml4hG.png"
+            alt="Reusd Logo"
+          />
+          <h4 class="projectCardTitle"></h4>
+          <p class="projectCardContent">
+            A full-stack web marketplace web application for trading used goods
+            with neighbors.
+          </p>
+        </div>
+        <div class="projectCard" id="dots">
+          <i class="fas fa-braille fa-lg"></i>
+          <h4 class="projectCardTitle">Dots</h4>
+          <p class="projectCardContent">
+            Features JWT full token-based authentication, password recovery and
+            easily trackable user activity motivated by GitHub yearly commit
+            tracker.
+          </p>
+        </div>
+          <div class="projectCard" id="python" onclick="window.open('https://github.com/dawumnam/Networking', '_blank')">
+            <i class="fab fa-linux fa-lg"></i>
+            <h4 class="projectCardTitle" id="fs-cd-tit">TFTP/ TCP over UDP</h4>
+            <p class="projectCardContent">
+              a TFTP protocol implemented based on RFC 793 and RFC 1350 using python.
+            </p>
+          </div>
+     
+      </div>
+    </section>
+    <section class="contactWrapper">
+      <ul class="contactList">
+        <li>
+          <div onclick="window.open('https://www.linkedin.com/in/nam-dawum-a487a1213/', '_blank')" class="contact">Linkedin</div>
+        </li> 
+        <li>
+          <div onclick="window.open('https://github.com/dawumnam', '_blank')" class="contact">Github</div>
+        </li>  <li>
+          <div onclick="location.href='mailto:dawumnam@gmail.com';" class="contact">Email</div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="modalWrapper" id="reusd-Modal">
+        <div class="modalContent">
+          <div class="modalProjectCardWrapper">
+            <img
+            class="projectCardImg"
+            src="https://i.imgur.com/F3ml4hG.png"
+            alt="Reusd Logo"
+          />
+          <h4 class="modalProjectCardTitle"></h4>
+          <button class="closeModal"><a href="https://github.com/dawumnam/reusd" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></button>
+          <button id="reusdModalClose" class="closeModal"><i class="fas fa-times fa-2x"></i></button>
+          <p class="modalProjectCardContent">
+            A full-stack web marketplace web application for trading used goods
+            with neighbors.<br>
+            Features real-time chat between users has two servers for route and authentication and chat.<br> 
+            Development was done using Docker containers to provide a consistent development environment. 
+          </p>
+        </div>
+        <div class="technologiesWrapper">
+          <div class="tech">
+            React
+          </div>
+          <div class="tech">
+            TypeScript
+          </div>
+          <div class="tech">
+            Node.js
+          </div>
+          <div class="tech">
+            Express
+          </div>
+          <div class="tech">
+            Redis
+          </div>
+          <div class="tech">
+            Socket.io
+          </div>
+          <div class="tech">
+            jwt
+          </div>
+          <div class="tech">
+            Docker
+          </div>
+          <div class="tech">
+            MongoDB
+          </div>
+        </div>
+        <div class="imagesWrapper">
+          <img class="modalProjectImage" src="https://i.imgur.com/GBEUibo.png" alt="projectImage">
+          <img src="https://i.imgur.com/8EAUFyi.png" alt="projectImage" class="modalProjectImage">
+          <img src="https://i.imgur.com/5PZskiL.png" alt="projectImage" class="modalProjectImage">
+          <img src="https://i.imgur.com/hGE2tUx.png" alt="projectImage" class="modalProjectImage">
+          <img src="https://i.imgur.com/LyZtaXx.png" alt="projectImage" class="modalProjectImage">
+        </div>
+
+        </div>
+      
+    </div>
+
+    <div class="modalWrapper" id="dots-Modal">
+      <div class="modalContent">
+        <div class="modalProjectCardWrapper">
+          <i style="align-self: center;" class="fas fa-braille fa-lg"></i>
+          <h4 style="align-self: center" class="modalProjectCardTitle">Dots</h4>
+        <button class="closeModal"><a href="https://github.com/dawumnam/dots" target="_blank"><i class="fab fa-github-square fa-2x"></i></a></button>
+        <button id="dotsModalClose" class="closeModal"><i class="fas fa-times fa-2x"></i></button>
+        <p class="modalProjectCardContent">
+          Personal daily activity tracker built on MERN stack. 
+          <br>
+          features JWT full token-based authentication, password recovery and easily trackable user activity motivated by GitHub yearly commit tracker. 
+      </div>
+      <div class="technologiesWrapper">
+        <div class="tech">
+          React
+        </div>
+        <div class="tech">
+          Node.js
+        </div>
+        <div class="tech">
+          Express
+        </div>
+        <div class="tech">
+          jwt
+        </div>
+        <div class="tech">
+          NodeMailer
+        </div>
+        <div class="tech">
+          MongoDB
+        </div>
+      </div>
+      <div class="imagesWrapper">
+        <img src="https://i.imgur.com/HxbPky7.png" alt="projectImage" class="modalProjectImage">
+        <img src="https://i.imgur.com/QMzjyYv.png" alt="projectImage" class="modalProjectImage">
+        <img src="https://i.imgur.com/VSoaUqV.png" alt="projectImage" class="modalProjectImage">
+        <img src="https://i.imgur.com/IsktcT3.png" alt="projectImage" class="modalProjectImage">
+      </div>
+    
+
+    </div>
+    <script>
+        let reusd = document.querySelector("#reusd")
+        let reusdModal = document.querySelector("#reusd-Modal")
+        document.querySelector("#reusdModalClose").addEventListener('click',(e)=>{
+          reusdModal.style.display = "none";
+        })
+        reusd.addEventListener('click', function (event) {
+            reusdModal.style.display = "block"
+        })
+     
+
+        let dots = document.querySelector("#dots")
+        let dotsModal = document.querySelector("#dots-Modal")
+        document.querySelector("#dotsModalClose").addEventListener('click',(e)=>{
+          dotsModal.style.display = "none";
+        })
+        dots.addEventListener('click', function (event) {
+            dotsModal.style.display = "block"
+        })
+    
+        window.onclick = function(event) {
+            if (event.target == reusdModal) {
+                reusdModal.style.display = "none"; }
+                if (event.target == dotsModal) {
+                dotsModal.style.display = "none";}
+        }
+      
+        
+    </script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.6.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.6.3/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+  </body>
+</html>
+
+
