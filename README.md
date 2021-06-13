@@ -11,5 +11,5 @@ git clone https://github.com/dawumnam/portfolio.git
 
 Then run public/index.html file 
 
-##Technologies
+## Technologies
 HTML, CSS, Javascript, and Firebase
