@@ -76,7 +76,7 @@
   </section>
 
   <div class="modalWrapper" id="reusd-Modal">
-    <div class="modalContent">
+    <div class="modalContent" id="reusd-Modal-Content">
       <div class="modalProjectCardWrapper">
         <img class="projectCardImg" src="https://i.imgur.com/F3ml4hG.png" alt="Reusd Logo" />
         <h4 class="modalProjectCardTitle"></h4>
@@ -133,7 +133,7 @@
   </div>
 
   <div class="modalWrapper" id="dots-Modal">
-    <div class="modalContent">
+    <div class="modalContent" id="dots-Modal-Content">
       <div class="modalProjectCardWrapper">
         <i class="fas fa-braille fa-lg"></i>
         <h4 class="modalProjectCardTitle">Dots</h4>
@@ -179,7 +179,7 @@
 
 
   <div class="modalWrapper" id="circle-Modal">
-    <div class="modalContent">
+    <div class="modalContent" id="circle-Modal-Content">
       <div class="modalProjectCardWrapper">
         
         <h4 class="modalProjectCardTitle">CIRCLE</h4>
@@ -226,45 +226,62 @@
   <script>
     let reusd = document.querySelector("#reusd")
     let reusdModal = document.querySelector("#reusd-Modal")
+    let reusdModalContent = document.querySelector("#reusd-Modal-Content")
+
     document.querySelector("#reusdModalClose").addEventListener('click', (e) => {
-      reusdModal.style.display = "none";
+      reusdModalContent.style.animation = "modalClose 0.3s ease-in forwards"
+      setTimeout(()=>{      reusdModal.style.display = "none";},300)
     })
     reusd.addEventListener('click', function (event) {
       reusdModal.style.display = "block"
+      reusdModalContent.style.animation = "modalDisplay 0.3s ease-in-out forwards"
+
     })
 
 
 
     let dots = document.querySelector("#dots")
     let dotsModal = document.querySelector("#dots-Modal")
+    let dotsModalContent = document.querySelector("#dots-Modal-Content")
+
     document.querySelector("#dotsModalClose").addEventListener('click', (e) => {
-      dotsModal.style.display = "none";
+      dotsModalContent.style.animation = "modalClose 0.3s ease-in forwards"
+      setTimeout(()=>{      dotsModal.style.display = "none";},300)
     })
     dots.addEventListener('click', function (event) {
       dotsModal.style.display = "block"
+      dotsModalContent.style.animation = "modalDisplay 0.3s ease-in-out forwards"
+
     })
 
 
     let circle = document.querySelector("#circle")
     let circleModal = document.querySelector("#circle-Modal")
+    let circleModalContent = document.querySelector("#circle-Modal-Content")
     document.querySelector("#circleModalClose").addEventListener('click', (e) => {
-      circleModal.style.display = "none";
+      circleModalContent.style.animation = "modalClose 0.3s ease-in forwards"
+      setTimeout(()=>{      circleModal.style.display = "none";},300)
     })
     circle.addEventListener('click', function (event) {
       circleModal.style.display = "block"
+      circleModalContent.style.animation = "modalDisplay 0.3s ease-in-out forwards"
     })
 
 
 
     window.onclick = function (event) {
       if (event.target == reusdModal) {
-        reusdModal.style.display = "none";
-      }
+        reusdModalContent.style.animation = "modalClose 0.3s ease-in forwards"
+
+        setTimeout(()=>{      reusdModal.style.display = "none";},300)      }
       if (event.target == dotsModal) {
-        dotsModal.style.display = "none";
-      }
+        dotsModalContent.style.animation = "modalClose 0.3s ease-in forwards"
+
+        setTimeout(()=>{      dotsModal.style.display = "none";},300)      }
       if (event.target == circleModal) {
-        circleModal.style.display = "none";
+        circleModalContent.style.animation = "modalClose 0.3s ease-in forwards"
+
+        setTimeout(()=>{      circleModal.style.display = "none";},300)
       }
     }
 
